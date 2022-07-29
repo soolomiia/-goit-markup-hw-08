@@ -1,0 +1,48 @@
+
+
+@import './utils/variables';
+@import './utils/hidden';
+@import './utils/placeholders.scss';
+
+
+@import './base/common';
+@import './base/reset';
+
+
+
+
+@import './components/title';
+@import './components/logo';
+@import './components/menu';
+@import './components/contacts';
+@import './components/do-card';
+@import './components/team-member';
+@import './components/media-list';
+@import './components/regular-clients';
+@import './components/button-section';
+@import './components/service-card';
+@import './components/footer-connexion';
+@import './components/footer-media';
+@import './components/footer-connection';
+@import './components/footer-form';
+@import './components/close-button';
+@import './components/backdrop-title';
+@import './components/backdrop-form';
+@import './components/form-privacy';
+@import './components/feedback';
+@import './components/studio-list';
+@import './components/backdrop';
+@import './components/section';
+@import './components/container';
+@import './components/last-item';
+
+@import './layouts/clients-section';
+@import './layouts/footer';
+@import './layouts/header';
+@import './layouts/main-page';
+@import './layouts/portfolio-section';
+@import './layouts/service-section';
+@import './layouts/studio-facts-section';
+@import './layouts/team-section';
+@import './layouts/presentation-section';
+@import './layouts/footer-section';

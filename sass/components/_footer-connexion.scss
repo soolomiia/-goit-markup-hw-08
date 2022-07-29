@@ -1,0 +1,38 @@
+.connexion{
+
+&__address{
+  font-style: normal;
+  margin-top: 20px;
+}
+&__map{
+  text-decoration: none;
+  line-height: 1.7;
+  color:   var(--secondary-background-color);
+  transition-property: color ;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+&__list{
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+&__item{
+  list-style: none;
+  margin-bottom: 9px;
+}
+&__link{
+  text-decoration: none;
+  line-height: 1.7;
+  color:   rgba(255, 255, 255, 0.6);
+  transition-property: color ;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus{
+  color: var(--accent);
+}
+}
+
+}

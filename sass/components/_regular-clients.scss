@@ -1,0 +1,42 @@
+.regular-clients{
+
+
+&__link{
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  background-color: var(--primary-background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  transition-property: border ;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
+ &:hover,
+ &:focus
+  {
+    cursor: pointer;
+    border: 1px solid var(--accent);
+  }
+}
+
+
+&__icon{
+  height: 60px;
+  width: 106px;
+  padding: 0;
+  fill: #AFB1B8;
+  background-color: var(--primary-background-color);
+  transition-property: fill ;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  .regular-clients__link:hover &,
+  .regular-clients__link:focus & {
+  cursor: pointer;
+  fill: var(--accent);
+}
+}
+}

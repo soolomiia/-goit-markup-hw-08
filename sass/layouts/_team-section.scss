@@ -1,0 +1,19 @@
+.team{
+    text-align: center;
+    align-items: center;
+    background-color: var(--secondary-background-color);
+
+  &__list{
+    text-decoration: none;
+    display: flex;
+    padding-left: 0%;
+    margin-top: -30px;
+    margin-left: -30px;
+    margin-bottom: 0;
+  }
+&__member{
+  margin-top: 30px;
+  margin-left: 30px;
+  flex-basis: calc((100% - 120px) / 4);
+}
+}

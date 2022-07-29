@@ -1,0 +1,11 @@
+.backdrop-title{
+    text-align: center;
+    
+
+  &__text{
+    font-size: 20px;
+    line-height: 1.15;
+    color: var(--logo-color);
+    margin-bottom: 0;
+  }
+}

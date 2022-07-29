@@ -1,0 +1,28 @@
+.close-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+ &__icon {
+    fill: currentColor;
+    transition-property: fill ;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    .close-button:hover &,
+    .close-button:focus & {
+      fill: #2196F3;
+    }
+  
+  }
+
+}

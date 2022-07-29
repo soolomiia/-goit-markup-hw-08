@@ -1,0 +1,26 @@
+.service{
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: -30px;
+  margin-bottom: -30px;
+
+
+
+  
+&__service-card{
+  cursor: pointer;
+  background-color: var(--primary-background-color);
+  border: none;
+  padding: 0;
+  text-decoration: none;
+  display: block;
+  transition-property: box-shadow ;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  margin-right: 30px;
+  margin-bottom: 30px;}
+  
+}

@@ -1,0 +1,50 @@
+.studio-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding-left: 0;
+    justify-content: space-between;
+
+  &__item{
+    width: 270px;
+
+    &::before{
+        content: " ";
+        display: block;
+        height: 120px;
+        background-color: rgba(245, 244, 250, 1);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 70px;
+        border-radius: 4px;
+        margin-bottom: 30px;
+      }
+      
+      
+  &:nth-child(1)::before{
+    background-image: url(../images/antenna\ 1.png);
+  }
+  &:nth-child(2)::before{
+    background-image: url(../images/clock\ 1.png);
+  }
+  &:nth-child(3)::before{
+    background-image: url(../images/diagram\ 1.png);
+  }
+  &:nth-child(4)::before{
+    background-image: url(../images/astro.png);
+  }
+  }
+
+  &__name {
+      font-size: 14px;
+      line-height: 1.1;
+      text-transform: uppercase;
+      color: var(--secondary-text-color);
+      margin-bottom: 10px;
+  }
+  &__description{
+      line-height: 1.71;
+      color: var(--primary-text-color);
+      margin: 0;
+  }
+}

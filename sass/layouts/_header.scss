@@ -1,0 +1,16 @@
+.page-header{
+    border-bottom: 1px solid #ECECEC;
+ 
+&__container{
+    display: flex;
+    align-items: center;
+  }
+&__navigation{
+    display: flex;
+    margin: 0;
+    align-items: center;
+  }
+  &__menu{
+    margin-left: 93px;
+  }
+}

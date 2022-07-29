@@ -1,0 +1,49 @@
+.form-privacy{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: rgba(117, 117, 117, 1); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  
+
+  &__box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    margin-right: 7px;
+    border: 2px solid var(--secondary-text-color) ;
+    border-radius: 2px;
+  }
+  &__input{
+    appearance: none;
+  }
+  &__icon{
+    width: 14px;
+    height: 13px;
+    fill: var(--invert-text-color);
+    opacity: 0;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    .form-privacy__input:checked + &{
+      background-color: var(--accent);
+      opacity: 1;
+      outline: 2px solid var(--accent);
+    
+    }
+  
+  }
+
+  &__link{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--accent);
+  }
+}

@@ -1,0 +1,22 @@
+.presentation{
+    padding-top: 0;
+    text-align: center;
+    align-items: center;
+ 
+  
+  &__list{
+    display: flex;
+    text-decoration: none;
+    padding-left: 0%;
+    margin-top: -30px;
+    margin-left: -30px;
+    margin-bottom: 0;
+  }
+
+  &__do-card{
+    margin-top: 30px;
+    margin-left: 30px;
+    flex-basis: calc((100% - 60px) / 3);
+  }
+}
+  
