@@ -1,10 +1,9 @@
 .menu{
   display: flex;
-  align-items: center;
   justify-content: space-between;
   min-width: 286px;
   list-style: none;
-    padding-left: 0;
+  padding-left: 0;
 
 &__item .current {
   color: var(--accent);

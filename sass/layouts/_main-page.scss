@@ -2,10 +2,17 @@
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main1.jpg) ;
     height: 600px;
     max-width: 1600px;
+    min-width: 320px;
+    width: 100%;
     text-align: center;
-    padding: 200px 0;
     margin: 0 auto;
     background-size: auto;
+    @media (min-width: 1200px){
+        padding: 200px 0;
+      }
+      @media (min-width: 768px){
+       padding: 118px 0;
+      }
 
 &__title {
     font-weight: 900;
