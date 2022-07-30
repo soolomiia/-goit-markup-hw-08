@@ -1,12 +1,9 @@
 .studio-list {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding-left: 0;
-    justify-content: space-between;
+
+
 
   &__item{
-    width: 270px;
+    
 
     &::before{
         content: " ";
@@ -41,6 +38,11 @@
       text-transform: uppercase;
       color: var(--secondary-text-color);
       margin-bottom: 10px;
+      text-align: center;
+      @media (min-width: 768px){
+text-align: left;
+      }
+
   }
   &__description{
       line-height: 1.71;

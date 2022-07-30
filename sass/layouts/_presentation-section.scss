@@ -1,4 +1,8 @@
 .presentation{
+  display: none;
+  @media (min-width: 1200px){
+    display: flex;
+  }
     padding-top: 0;
     text-align: center;
     align-items: center;

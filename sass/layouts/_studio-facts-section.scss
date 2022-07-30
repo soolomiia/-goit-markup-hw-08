@@ -1,3 +1,37 @@
 .studio-facts{
 
+    &__list{  
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+
+        @media (min-width: 768px){
+            display: flex;
+            flex-wrap: wrap;
+          }
+          @media (min-width: 1200px){
+            display: flex;
+            flex-wrap: wrap;
+          }
+    }
+    &__item{
+        flex-basis: 100%;
+        width: auto;
+
+        @media (min-width: 768px){
+          flex-basis: 50%;
+          padding: 15px;
+          width: 270px;
+          }
+          @media (min-width: 1200px){
+           flex-basis: 25%;
+           padding: 15px;
+           
+          }
+    }
+    &__item + &__item{ 
+        
+        
+    }
 }
