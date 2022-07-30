@@ -8,11 +8,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
-  height: 92px;
+
   transition-property: border ;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media (min-width: 768px){
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media (min-width: 1200px){
+    min-width: 170px;
+    min-height: 92px;
+  }
   
  &:hover,
  &:focus

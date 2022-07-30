@@ -6,18 +6,21 @@
   &__list{
     display: flex;
     padding: 0;
-    justify-content: space-between;
-    margin: 0;
+    margin: -15px;
     flex-wrap: wrap;
+    list-style: none;
+    
   }
-&__member{
+   &__member{
+    padding: 15px;
+    flex-basis: 100%;
 
   
   @media (min-width: 768px){
-    
+    flex-basis: 50%;
     }
     @media (min-width: 1200px){
-     
+     flex-basis: 25%;
      
     }
 }
