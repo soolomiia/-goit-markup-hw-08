@@ -4,11 +4,17 @@
   padding-left: 0;
   margin-top: 0;
   margin-left: 0;
-  margin-right: -30px;
-  margin-bottom: -30px;
-
-
-
+  align-items: center;
+  justify-content: center;
+  @media (min-width: 768px){
+    margin: -15px;;
+  
+  }      
+  @media (min-width: 1200px){
+    margin: -15px;;
+  
+  }
+ 
   
 &__service-card{
   cursor: pointer;
@@ -20,7 +26,20 @@
   transition-property: box-shadow ;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  margin-right: 30px;
-  margin-bottom: 30px;}
+  margin-bottom: 30px;
+  
+  @media (min-width: 768px){
+    flex-basis: calc((100% - 60px)/2);
+    margin: 15px;
+    width: 354px;
+  
+  }      
+  @media (min-width: 1200px){
+    flex-basis: calc((100% - 90px)/3);
+    margin: 15px;
+  
+  }
+
+}
   
 }

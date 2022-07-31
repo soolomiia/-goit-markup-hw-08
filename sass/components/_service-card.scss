@@ -67,5 +67,16 @@ font-size: 16px;
 line-height: 1.9;
 margin: 0;
 }
+&__first{
+  
+  @media (min-width: 768px){
+    margin-bottom: 36px;
+  
+  }      
+  @media (min-width: 1200px){
+    margin-bottom: 0;
+  
+  }
+}
 
 }

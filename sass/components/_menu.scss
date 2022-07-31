@@ -42,4 +42,10 @@
 
 }
 
+&__container{
+  @media (min-width: 768x){
+display: none;
+  }
+}
+
 }

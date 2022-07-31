@@ -9,20 +9,19 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   
-    .logo-menu__link:hover &,
-    .logo-menu__link:focus & {
+    .logo-menu__button:hover &,
+    .logo-menu__button:focus & {
     cursor: pointer;
     fill: var(--accent);
   }
 }
-&__link{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    
-        
+&__button{
+  background: rgba(0,0,0,0);
+  border: none;
+  padding: 0px;
+  margin: 0px;
+  width: 40px;
+  height: 40px;
 }
 
 }
