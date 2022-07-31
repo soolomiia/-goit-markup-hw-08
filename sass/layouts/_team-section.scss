@@ -6,22 +6,30 @@
   &__list{
     display: flex;
     padding: 0;
-    margin: -15px;
     flex-wrap: wrap;
     list-style: none;
-    
-  }
-   &__member{
-    padding: 15px;
-    flex-basis: 100%;
-
   
+    @media (min-width: 768px){
+      flex-basis: calc((100% - 60px)/2);
+      gap: 30px;
+  }
+  @media (min-width: 1200px){
+    gap: 30px;
+   
+  }
+}
+    
+  &__member{
+    padding: 15px;
   @media (min-width: 768px){
-    flex-basis: 50%;
+        flex-basis: calc((100% - 60px)/2);
+    
     }
     @media (min-width: 1200px){
-     flex-basis: 25%;
+      flex-basis: calc((100% - 120px)/4);
+  
      
     }
+  }
 }
-}
+

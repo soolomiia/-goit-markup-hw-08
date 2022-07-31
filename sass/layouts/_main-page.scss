@@ -9,6 +9,9 @@
     background-size: auto;
     padding: 118px 0;
     max-height: 400px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     @media (min-width: 1200px){
         padding: 200px 0;
         max-height: none;

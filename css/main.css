@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .image {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -257,11 +257,11 @@ html {
 }
 
 .member {
-  list-style: none;
   background: var(--primary-background-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  text-align: center;
 }
 .member__person {
   padding-top: 30px;
@@ -1013,12 +1013,26 @@ html {
 }
 
 .container {
-  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
   position: relative;
+}
+@media (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .last-item {
@@ -1065,6 +1079,9 @@ html {
   list-style: none;
   padding-left: 0;
   margin: 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -15px;
 }
 @media (min-width: 1200px) {
   .clients__list {
@@ -1073,12 +1090,38 @@ html {
             justify-content: space-evenly;
   }
 }
+.clients__item {
+  -ms-flex-preferred-size: calc((100% - 60px) / 2);
+      flex-basis: calc((100% - 60px) / 2);
+  margin: 15px;
+}
+@media (min-width: 768px) {
+  .clients__item {
+    -ms-flex-preferred-size: calc((100% - 90px) / 3);
+        flex-basis: calc((100% - 90px) / 3);
+    margin: 15px;
+  }
+}
+@media (min-width: 1200px) {
+  .clients__item {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    margin: 0;
+  }
+}
 
 footer {
   background: var(--third-background-color);
   padding-top: 60px;
   padding-bottom: 60px;
   border-bottom: var(--accent);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .page-header {
@@ -1180,6 +1223,10 @@ footer {
   background-size: auto;
   padding: 118px 0;
   max-height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 @media (min-width: 1200px) {
   .main-page {
@@ -1322,26 +1369,35 @@ footer {
   display: -ms-flexbox;
   display: flex;
   padding: 0;
-  margin: -15px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   list-style: none;
 }
+@media (min-width: 768px) {
+  .team__list {
+    -ms-flex-preferred-size: calc((100% - 60px) / 2);
+        flex-basis: calc((100% - 60px) / 2);
+    gap: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .team__list {
+    gap: 30px;
+  }
+}
 .team__member {
   padding: 15px;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
 }
 @media (min-width: 768px) {
   .team__member {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
+    -ms-flex-preferred-size: calc((100% - 60px) / 2);
+        flex-basis: calc((100% - 60px) / 2);
   }
 }
 @media (min-width: 1200px) {
   .team__member {
-    -ms-flex-preferred-size: 25%;
-        flex-basis: 25%;
+    -ms-flex-preferred-size: calc((100% - 120px) / 4);
+        flex-basis: calc((100% - 120px) / 4);
   }
 }
 
@@ -1387,4 +1443,38 @@ footer {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media (min-width: 768px) {
+  .footer-section {
+    width: 768px;
+  }
+}
+@media (min-width: 1200px) {
+  .footer-section {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+@media (min-width: 1200px) {
+  .footer-section__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+@media (min-width: 768px) {
+  .footer-section {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }/*# sourceMappingURL=main.css.map */

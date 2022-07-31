@@ -3,4 +3,7 @@ footer{
     padding-top: 60px;
     padding-bottom: 60px;
     border-bottom: var(--accent);
+    display: flex;
+    flex-direction: column;
+
 }

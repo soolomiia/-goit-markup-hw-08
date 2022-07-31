@@ -1,14 +1,32 @@
 .clients{
+
 &__list{
 display: flex;
 align-items: center;
-
 list-style: none;
 padding-left: 0;
 margin: 0;
+flex-wrap: wrap;
+margin: -15px;
 
 @media (min-width: 1200px){
   justify-content: space-evenly;
 }
 }
+&__item {
+flex-basis: calc((100% - 60px)/2);
+margin: 15px;
+
+@media (min-width: 768px){
+  flex-basis: calc((100% - 90px)/3);
+  margin: 15px;
 }
+
+@media (min-width: 1200px){
+  flex-basis: auto;
+  margin: 0;
+}
+}
+}
+
+
