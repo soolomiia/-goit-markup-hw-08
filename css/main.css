@@ -521,6 +521,27 @@ html {
   margin: 0;
 }
 
+.connexion {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0;
+  text-align: center;
+  min-width: 232px;
+  margin-bottom: 60px;
+}
+@media (min-width: 768px) {
+  .connexion {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .connexion {
+    text-align: left;
+    margin-bottom: 0;
+  }
+}
 .connexion__address {
   font-style: normal;
   margin-top: 20px;
@@ -560,16 +581,25 @@ html {
   color: var(--accent);
 }
 
+.footer-media {
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .footer-media {
+    text-align: left;
+  }
+}
 .footer-media__list {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding-left: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  gap: 10px;
   min-width: 206px;
 }
 .footer-media__link {
@@ -611,6 +641,18 @@ html {
   background-color: var(--accent);
 }
 
+.footer-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 .footer-form__form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -618,6 +660,21 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media (min-width: 1200px) {
+  .footer-form__form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 .footer-form__input {
   width: 358px;
@@ -691,6 +748,12 @@ html {
   letter-spacing: 0.06em;
   border-radius: 4px;
   border: 0;
+  margin-top: 20px;
+}
+@media (min-width: 1200px) {
+  .footer-form__button {
+    margin-bottom: 0;
+  }
 }
 .footer-form__icon {
   margin-left: 10px;
@@ -1437,21 +1500,10 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-@media (min-width: 768px) {
-  .footer-section {
-    width: 768px;
-  }
 }
 @media (min-width: 1200px) {
   .footer-section {
@@ -1459,6 +1511,22 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+.footer-section__box {
+  margin-bottom: 60px;
+}
+@media (min-width: 768px) {
+  .footer-section__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 @media (min-width: 1200px) {
@@ -1470,11 +1538,24 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    gap: 70px;
+    margin-bottom: 0;
   }
 }
+.footer-section__form {
+  text-align: center;
+  margin: 0;
+}
 @media (min-width: 768px) {
-  .footer-section {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+  .footer-section__form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+@media (min-width: 1200px) {
+  .footer-section__form {
+    text-align: left;
   }
 }/*# sourceMappingURL=main.css.map */

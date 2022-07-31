@@ -1,11 +1,17 @@
 .footer-media{
+  text-align: center;
+
+  @media (min-width: 1200px) {
+  text-align: left;
+  }
 
 &__list{
   list-style: none;
   display: flex;
   padding-left: 0;
+  justify-content: center;
   margin: 0;
-  justify-content: space-between;
+  gap: 10px;
   min-width: 206px;
 }
 &__link{

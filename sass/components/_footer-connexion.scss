@@ -1,4 +1,17 @@
 .connexion{
+  flex-direction: column;
+  margin: 0;
+  text-align: center;
+  min-width: 232px;
+  margin-bottom: 60px;
+  @media (min-width: 768px){
+
+    margin-bottom: 0;
+  }
+  @media (min-width: 1200px){
+    text-align: left;
+    margin-bottom: 0;
+  }
 
 &__address{
   font-style: normal;

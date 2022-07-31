@@ -1,29 +1,40 @@
 
   .footer-section{
     display: flex;
-    justify-content: space-between;
-    align-items: baseline;
     flex-direction: column;
     
-    @media (min-width: 480px){
-
-    }
-
     @media (min-width: 768px){
-      width: 768px;
+      
     }
     @media (min-width: 1200px){
       flex-direction: row;
+      justify-content: space-between;
     }
 
     &__box{
+      margin-bottom: 60px;
+      @media (min-width: 768px){
+        display: flex;
+        justify-content: space-between;
+        
+      }
      @media (min-width: 1200px){
          display: flex;
          flex-direction: row;
+         gap: 70px;
+         margin-bottom: 0;
        }
+    
+
+  }
+   &__form{
+    text-align: center;
+    margin: 0;
+@media (min-width: 768px) {
+  flex-direction: row;
+  }
+  @media (min-width: 1200px) {
+    text-align: left;
     }
-    @media (min-width: 768px){
-     justify-content: space-around;
    }
-   
   }
