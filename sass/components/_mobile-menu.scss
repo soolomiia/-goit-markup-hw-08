@@ -1,0 +1,103 @@
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-left: 40px;
+    padding-right: 15px;
+    color: var(--primary-background-color);
+    background-color: var(--primary-background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @media (min-width: 768px){
+      display: none;
+    } 
+    &__nav{
+        margin: 0;
+    }
+    &__nav-list{
+        padding: 0;
+        margin: 0;
+    }
+
+    &__nav-item{
+        padding-top: 16px;
+        padding-bottom: 16px;
+
+    }
+    &__nav-link {
+        color: var(--secondary-text-color);
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 1.175;
+        transition-property: color ;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus{
+            color: var(--accent);
+        }
+    }
+    &__contacts-list{
+        padding: 0;
+        margin: 0;
+    }
+    &__contacts-item{
+        padding-top: 16px;
+        padding-bottom: 16px;
+
+    }
+
+
+    &__contacts-phone{
+        color:  var(--accent);
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 1.17;
+
+    }
+    &__contacts-mail{
+        color: var(--primary-text-color);
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 1.16;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+    &__media{
+        margin-top: 64px;
+    }
+    &__media-list{
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+    &__media-item{
+        padding: 10px;
+        border-right: 1px solid rgba(33, 33, 33, 0.2);;
+    }
+    &__media-item-last{
+        padding: 10px;
+        border: 0;
+    }
+    &__media-link{
+        color: var(--accent);
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.22;
+        letter-spacing: 0.02em;
+        transition-property: color ;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    }
+  }
