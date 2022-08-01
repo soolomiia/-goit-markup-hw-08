@@ -22,10 +22,10 @@
             <nav class="page-header__navigation page-header__desktop-menu ">
             <ul class=" menu ">
               <li class="menu__item">
-                <a class="menu__link " href="./index.html">Студія</a>
+                <a class="menu__link current" href="./index.html">Студія</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link current"  href="./portfolio.html">Портфоліо</a></li>
+                <a class="menu__link" href="./portfolio.html">Портфоліо</a></li>
               <li class="menu__item">
                 <a class="menu__link" href="/">Контакти</a></li>
             </ul>
@@ -49,11 +49,74 @@
             </li>
           </ul>
           <div class="logo-menu page-header__logo-menu">
-            <a href="" class="logo-menu__link ">
-          <svg class="logo-menu__icon" width="40px" height="40px">
-            <use href="./images/icons.svg#icon-menu "></use>
-          </svg> </a>
+            <button class="logo-menu__button  " 
+            type="button" 
+            aria-expanded="false" 
+            aria-controls="menu-container"
+            data-mobile-menu-open >
+          <svg class="logo-menu__icon" width="40px" height="40px" aria-label="мобільне меню">
+            <use class="logo-menu__icon-menu" href="./images/icons.svg#icon-menu "></use>
+          </svg> </button> 
+        </div> 
+          <div class="mobile-menu is-hidden" id="menu-container" data-mobile-menu>
+            <button class="logo-menu__button-close " 
+            type="button" data-mobile-menu-close>
+          <svg class="logo-menu__icon-close" width="40px" height="40px" aria-label="мобільне меню">
+            <use class="logo-menu__icon-cross" href="./images/icons.svg#icon-menu-close "></use>
+          </svg> </button> 
+          <div class="mobile-menu__nav">
+            <ul class="mobile-menu__nav-list">
+              <li class="mobile-menu__nav-item">
+                <a class="mobile-menu__nav-link" href="./index.html">Студія
+                </a>
+              </li>
+              <li class="mobile-menu__nav-item">
+                <a class="mobile-menu__nav-link" href="./portfolio.html">
+                  Портфоліо
+                </a>
+              </li>
+              <li class="mobile-menu__nav-item">
+                <a class="mobile-menu__nav-link" href="">
+                  Контакти
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="mobile-meni__box">
+          <div class="mobile-menu__contacts">
+            <ul class="mobile-menu__contacts-list ">
+              <li class="mobile-menu__contacts-item">
+                <a class="mobile-menu__contacts-phone" href="tel:+380961111111">
+                  +38 096 111 11 11</a
+                >
+              </li>
+              <li class="mobile-menu__contacts-item">
+                <a class="mobile-menu__contacts-mail" href="emailto:info@devstudio.com">
+                  info@devstudio.com
+                </a>
+              </li>
+
+            </ul>
+          </div>
+          <div class="mobile-menu__media">
+            <ul class="mobile-menu__media-list">
+            <li class="mobile-menu__media-item ">
+              <a class="mobile-menu__media-link" href="#" >Instagram</a>
+            </li>
+            <li class="mobile-menu__media-item">
+              <a class="mobile-menu__media-link" href="#">Twitter</a>
+            </li>
+            <li class="mobile-menu__media-item">
+              <a class="mobile-menu__media-link" href="#">Facebook</a>
+            </li>
+            <li class="mobile-menu__media-item-last ">
+              <a class="mobile-menu__media-link" href="#">LinkedIn</a>
+            </li>
+          </ul>
+          </div>
         </div>
+          </div>
+
       </div>
     </header>
     <main>
@@ -83,6 +146,7 @@
                 <div class="service-card__box">
                 <img
                   class="image img-service"
+                  srcset="./images/persh@2x.jpg 2x"
                   src="./images/persh.jpg"
                   alt="techno_kriak"
                   width="370"
@@ -104,6 +168,7 @@
                 <div class="service-card__box">
                 <img
                   class="image img-service"
+                  srcset="./images/drugii@2x.jpg 2x"
                   src="./images/drugii.jpg"
                   alt="poster"
                   width="370"
@@ -125,6 +190,7 @@
                 <div class="service-card__box">
                 <img
                   class="image img-service"
+                  srcset="./images/tretii@2x.jpg 2x"
                   src="./images/tretii.jpg"
                   alt="restoran"
                   width="370"
@@ -146,6 +212,7 @@
                 <div class="service-card__box">
                 <img
                   class="image img-service"
+                  srcset="./images/chetvert@2x.jpg 2x"
                   src="./images/chetvert.jpg"
                   alt="prime"
                   width="370"
@@ -166,6 +233,7 @@
                 <div class="service-card__box">
                 <img
                   class="image img-service"
+                  srcset="./images/piatii@2x.jpg 2x"
                   src="./images/piatii.jpg"
                   alt="boxes"
                   width="370"
@@ -187,6 +255,7 @@
                 <div class="service-card__box">
                 <img
                   class="image img-service"
+                  srcset="./images/shostii@2x.jpg 2x"
                   src="./images/shostii.jpg"
                   alt="web_site"
                   width="370"
@@ -208,6 +277,7 @@
                 <div class="service-card__box">
                 <img
                   class="image img-service"
+                  srcset="./images/sim@2x.jpg 2x"
                   src="./images/sim.jpg"
                   alt="magasine"
                   width="370"
@@ -229,6 +299,7 @@
                 <div class="service-card__box">
                 <img
                   class="image img-service"
+                  srcset="./images/osim@2x.jpg 2x"
                   src="./images/osim.jpg"
                   alt="marketing"
                   width="370"
@@ -250,6 +321,7 @@
                 <div class="service-card__box">
                 <img
                   class="image img-service"
+                  srcset="./images/dev@2x.jpg 2x"
                   src="./images/dev.jpg"
                   alt="app"
                   width="370"
@@ -350,5 +422,6 @@
       </div>
     </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
