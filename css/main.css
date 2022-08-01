@@ -460,6 +460,8 @@ html {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 100%;
+  max-width: 370px;
 }
 .service-card__link {
   cursor: pointer;
