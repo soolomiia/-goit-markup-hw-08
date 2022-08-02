@@ -1,18 +1,12 @@
 .main-page {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main1.jpg) ;
     max-width: 1600px;
-    min-width: 320px;
-    width: 100%;
     text-align: center;
     margin: 0 auto;
-    background-size: auto;
     padding: 118px 0;
-    max-height: 400px;
-    object-fit: cover;
-    background-repeat: no-repeat;
-    background-position: center;
 
-    @media (min-device-pixel-ratio: 2),
+
+   /* @media (min-device-pixel-ratio: 2),
     (min-resolution: 2dppx),
     (min-resolution: 192dpi) {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main1@2x.jpg) ;
@@ -20,7 +14,7 @@
     @media (min-width: 1200px){
         padding: 200px 0;
         max-height: none;
-      }
+      }*/
 
 
       &__title {

@@ -29,6 +29,13 @@ justify-content: center;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+  @media (min-width: 320px){
+    width: 100%;
+  }
+  @media (min-width: 480px){
+    width: 358px;  }
+}
+
   &::placeholder{
     font-weight: 400;
     color: rgba(255, 255, 255, 0.6);
@@ -40,7 +47,7 @@ justify-content: center;
     border: 1px solid var(--button-hover);
     outline: none;
   }
-}
+
 
 
 &__button{

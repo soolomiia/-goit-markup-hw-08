@@ -4,6 +4,7 @@
   min-width: 286px;
   list-style: none;
   padding-left: 0;
+  margin: 0;
 
 &__item .current {
   color: var(--accent);
@@ -15,13 +16,18 @@
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-    color: inherit;
+  color: inherit;
   position: relative;
   padding-top: 32px;
-  padding-bottom: 32px;
   transition-property: color ;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @media (min-width: 480px){
+    padding-bottom: 28px;
+  }
+  @media (min-width: 1200px){
+    padding-bottom: 32px;
+  }
   
   &:hover, 
   &:focus {
