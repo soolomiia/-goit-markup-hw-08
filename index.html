@@ -165,6 +165,7 @@
               <div class="do-card__overlay">
                 <img
                   class="image img-do-card"
+                  srcset="images/comp.jpg 1x, images/comp@2x.jpg 2x"
                   src="images/comp.jpg"
                   alt="computer"
                   width="370"
@@ -179,6 +180,7 @@
               <div class="do-card__overlay">
                 <img
                   class="image img-do-card"
+                  srcset="images/phone.jpg 1x, images/phone@2x 2x"
                   src="images/phone.jpg"
                   alt="phone"
                   width="370"
@@ -193,6 +195,7 @@
               <div class="do-card__overlay">
                 <img
                   class="image img-do-card"
+                  srcset="images/paint.jpg 1x, images/paint@2x.jpg 2x"
                   src="images/paint.jpg"
                   alt="sxema"
                   width="370"
@@ -212,8 +215,13 @@
           <ul class="team__list">
             <li class=" team__member">
               <div class="member">
-              <img class="image member__image"
-              src="images/igor.jpg" alt="igor" width="270" height="260" />
+                <picture>
+                  <source srcset="images/igor400.jpg 1x, images/igor400@2x.jpg 2x" media="(max-widht: 767px)">
+                  <source srcset="images/igor700.jpg 1x, images/igor700@2x.jpg 2x" media="(min-widht: 768px)">
+                  <source srcset="images/igor.jpg 1x, images/igor@2x.jpg 2x" media="(min-widht: 1200px)">
+                  <img class="image member__image"
+                  src="images/igor.jpg" alt="igor" width="270" height="260" />
+                </picture>
               <div class="member__person">
                 <h3 class="member__name">Игорь Демьяненко</h3>
                 <p class="member__description">Product Designer</p>
@@ -252,8 +260,13 @@
             </li>
             <li class="team__member">
               <div class="member">
+                <picture>
+                  <source srcset="images/olga400.jpg 1x, images/olga400@2x.jpg 2x" media="(max-widht: 767px)">
+                  <source srcset="images/olga700.jpg 1x, images/olga700@2x.jpg 2x" media="(min-widht: 768px)">
+                  <source srcset="images/olga.jpg 1x, images/olga@2x.jpg 2x" media="(min-widht: 1200px)"> 
               <img class="image member__image"
                src="images/olga.jpg" alt="olga" width="270" height="260" />
+              </picture>
               <div class="member__person">
                 <h3 class="member__name">Ольга Репина</h3>
                 <p class="member__description">Frontend Developer</p>
@@ -292,6 +305,10 @@
             </li>
             <li class=" team__member">
               <div class="member">
+                <picture>
+                <source srcset="images/niki400.jpg 1x, images/niki400@2x.jpg 2x" media="(max-widht: 767px)">
+                <source srcset="images/niki700.jpg 1x, images/niki700@2x.jpg 2x" media="(min-widht: 768px)">
+                <source srcset="images/niki.jpg 1x, images/niki@2x.jpg 2x" media="(min-widht: 1200px)"> 
               <img
                 class="image member__image"
                 src="images/niki.jpg"
@@ -299,6 +316,7 @@
                 width="270"
                 height="260"
               />
+            </picture>
               <div class="member__person">
                 <h3 class="member__name">Николай Тарасов</h3>
                 <p class="member__description">Marketing</p>
@@ -337,8 +355,13 @@
             </li>
             <li class=" team__member">
               <div class="member">
+                <picture>
+                <source srcset="images/miki400.jpg 1x, images/miki400@2x.jpg 2x" media="(max-widht: 767px)">
+                <source srcset="images/miki700.jpg 1x, images/miki700@2x.jpg 2x" media="(min-widht: 768px)">
+                <source srcset="images/miki.jpg 1x, images/miki@2x.jpg 2x" media="(min-widht: 1200px)"> 
               <img class="image member__image"
               src="images/miki.jpg" alt="mike" width="270" height="260" />
+            </picture>
               <div class="member__person">
                 <h3 class="member__name">Михаил Ермаков</h3>
                 <p class="member__description">UI Designer</p>
