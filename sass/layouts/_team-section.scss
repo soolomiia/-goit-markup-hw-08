@@ -6,29 +6,19 @@
   &__list{
     display: flex;
     padding: 0;
+    margin: 0;
     flex-wrap: wrap;
     list-style: none;
-  
-    @media (min-width: 768px){
-      flex-basis: calc((100% - 60px)/2);
-      gap: 30px;
-  }
-  @media (min-width: 1200px){
     gap: 30px;
-   
-  }
 }
     
   &__member{
-    padding: 15px;
   @media (min-width: 768px){
-        flex-basis: calc((100% - 60px)/2);
+        flex-basis: calc((100% - 30px)/2);
     
     }
     @media (min-width: 1200px){
-      flex-basis: calc((100% - 120px)/4);
-  
-     
+      flex-basis: calc((100% - 90px)/4);
     }
   }
 }

@@ -14,7 +14,6 @@ justify-content: center;
   }
 }
 &__input{
-  width: 358px;
   height: 50px;
   border-radius: 4px;
   padding-left: 16px;
@@ -31,6 +30,7 @@ justify-content: center;
 
   @media (min-width: 320px){
     width: 100%;
+    min-width: 290px;
   }
   @media (min-width: 480px){
     width: 358px;  }
